@@ -12,23 +12,36 @@
 </head>
 <body>
     <div class="container">
-        <div>
-            <label for="nombre">Ingresa aquí tu nombre:</label>
-            <input class="inputText" type="text" id="nombre" name="nombre">
+        <div class="sub-container">
+            <div>
+                <label for="nombre">Ingresa aquí tu nombre:</label>
+                <input class="inputText" type="text" id="nombre" name="nombre">
+            </div>
+            <div>
+                <label for="estatura">Ingresa tu estatura (cm):</label>
+                <input class="inputText" type="number" id="estatura" name="estatura">
+            </div>
             
-            <label for="estatura">Tu estatura en cm:</label>
-            <input class="inputText" type="number" id="estatura" name="estatura">
-
-            <label for="peso">Tu peso en kg:</label>
-            <input class="inputText" type="number" id="peso" name="peso">
-            
+            <div>
+                <label for="peso">Ingresa tu peso (kg):</label>
+                <input class="inputText" type="number" id="peso" name="peso">
+            </div>
+            <div>
+                <button type="button" class="btn" onclick="calculateBtn()" id="calcBtn">Calcular</button>
+            </div>
         </div>
         
-        <div>
-            <button type="button" class="btn" onclick="calculateBtn()">Calcular</button>
+        <div class="image" id="image"> 
+
         </div>
-    
-        <h3 id="text"> </h3>
+        <div class="text1">
+            <h3 id="text"> </h3>
+        </div>
+
+        <div class="text2">
+            <h3 id="IMC"> </h3>
+        </div>
+        
     </div>
 
 
